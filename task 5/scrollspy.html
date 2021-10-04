@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scroolspy</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <nav>
+            <ul>
+                <li><a href="#home" class="home">Home</a></li>
+                <li><a href="#cricket" class="cricket">cricket</a></li>
+                <li><a href="#file_upload" class="file_upload">Upload image</a></li>
+                <li><a href="#overlay" class="overlay">overlay</a></li>
+                <li><a href="#fourth" class="fourth">Pagination</a></li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <img src="images/welcome.gif" width="50%" height="200px">
+        </section>
+        <section id="cricket">
+            <p>We have got some fresh good news for you. Let us tell you that the T20 World Cup 2021 Schedule has been done.<br>
+             In the notification of ICC issued in June 2021, it was said that soon the third wave of Covid may come in India.<br> 
+             Therefore, the ICC has decided in its meeting that the T20 World Cup 2021 will be started in UAE on 17 October 2021.</p>
+             <img src="images/cricket.jpeg "/>
+            </section>
+        <section id="file_upload">
+            <input type="file" id="image_input" accept="image/png, image/jpg, image/jpeg">
+            <div id="display_image"></div>
+            </section>
+        <section id="overlay">
+            <div class="popup" id="popup-1">
+                <div class="content">
+                    <div class="close-btn" onclick="toggleup()">&times;</div>
+                 <h1>Hello</h1>
+                 <img src="images/cat1.gif"/>
+                </div>
+            </div>
+            <p>Overlay means to cover the surface of something with a coating.<br> 
+                In other words, it is used to set one thing on the top of another.<br>
+                The overlay makes a web-page attractive, and it is easy to design.</p>
+            <button onclick="toggleup()">show overlay</button>
+            
+        </section>
+        <section id="fourth">
+            <div class="container">
+                <div class="page" id="page1"></div>
+            </div>
+            <div class="pagenation">
+                <div class="prev">Prev<<</div>
+                <div class="count">Page <span class="count_num"></span></div>
+                <div class="next">Next>></div>
+            </div>
+            
+        </section>
+
+        <script  src="scrollspy.js"></script>
+    </body>
+</html>

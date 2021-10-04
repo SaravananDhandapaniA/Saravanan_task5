@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+}
+nav{
+    display: flex;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    align-items:center;
+    background-color: rgb(148, 58, 233);
+    justify-content: center;
+}
+nav ul {
+    display: flex; 
+     
+}
+nav ul li{
+    list-style: none;
+    margin: 0px 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(245, 222, 179);
+    font-size: 20px;
+    padding: 0px 5px;
+    
+}
+nav ul li a:hover{
+    color: rgb(255, 0, 13);
+    background-color: lightyellow;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home
+{
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    font-weight: bolder;
+    background-image: url('images/back.jpeg');
+}
+#cricket
+{
+    background-color: rgb(179, 239, 247);
+}
+#file_upload
+{
+    background-color: rgba(55, 99, 107, 0.884);
+}
+#overlay
+{
+    background-color: rgb(141, 167, 115);
+}
+#fourth
+{
+    background-color: #111d4a;
+}
+
+
+p{
+    font-size: 20px;
+}
+
+#cricket>img{
+      height:300px;
+    background-size: auto;
+}
+
+#display_image
+{
+    width: 30%;
+    height: 50Vh;
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+button{
+    width: 20vh;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(69, 96, 219);
+}
+
+/*overlay*/
+.popup
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    text-align: center;
+    color: rgb(255, 255, 224);
+}
+.popup .close-btn
+{
+    position: absolute;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(228, 49, 49);
+    color: rgb(245, 222, 179);
+    border-radius: 50%;
+}
+.popup.active
+{
+    display: block;
+}
+.popup.active .content
+{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+/*pagenation*/
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+div#page1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.picture {
+    background-color: #e2f4f7;
+    border-radius: 3px;
+    height:30vh;
+}
+
+.temp {
+    width: 45%;
+    margin: 10px;
+}
+
+.pagenation
+{
+  width: 20%;
+  /* text-align: center; */
+}
+.pagenation div{
+    display: inline-block;
+    text-align: center;
+}
+.pagenation .prev, .pagenation .next
+{
+    width:100px;
+    color: rgb(242, 240, 248);
+    background-color: lightseagreen;
+    border:1px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.prev:hover , .next:hover
+{
+    background-color: darkviolet;
+}
+.count
+{
+    color: rgb(238, 255, 7);
+}
+
+.pagenation .prev.disabled, .pagenation .next.disabled{
+
+    border-color: grey;
+    color: grey;
+    pointer-events: none;
+}
+
+.page .temp.hide
+{
+    display: none;
+}
+.page .temp.show
+{
+    display: block;
+    animation: show .5s ease;
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
