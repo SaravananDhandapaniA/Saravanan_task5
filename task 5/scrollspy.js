@@ -78,50 +78,62 @@ function toggleup()
 const image_container = document.getElementById("page1");
 const img_list = [
     {
+        id:1,
         name:"Virat",
         url:"images/virat.jpeg"
     },
-    {
+    { 
+        id:2,
         name:"Dhoni",
         url:"images/dhoni.jpg"
     },
     {
+        id:3,
         name:"Kl rahul",
         url:"images/kl.jpg"
     },
     {
+        id:4,
         name:"Pant",
         url:"images/pant.jpg"
     },
     {
+        id:5,
         name:"Rohit",
         url:"images/rohit.jpeg"
     },
     {
+        id:6,
         name:"Samson",
         url:"images/samson.jpg"
     },
     {
+        id:7,
         name:"Kane Williomson",
         url:"images/kane.jpg"
     },
     {
+        id:8,
         name:"Dinesh Karthik",
         url:"images/dk.jpg"
     },
     {
+        id:9,
         name:"ABD",
         url:"images/abd.jpg"
     },
     {
+        id:10,
         name:"Sky",
         url:"images/sky.jpg"
     },
     {
+        id:11,
         name:"Jadeja",
         url:"images/jadu.jpg"
     },
     {
+        id:12,
         name:"Sachin",
         url:"images/sachin.jpg"
     }
