@@ -5,7 +5,7 @@ let file_upload=document.querySelector("#file_upload");
 let overlay=document.querySelector("#overlay");
 let fourth=document.querySelector("#fourth");
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll",()=> {
     var win=window.pageYOffset;
     if(cricket.offsetTop <= win && file_upload.offsetTop > win)
     {
