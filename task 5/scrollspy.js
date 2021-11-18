@@ -136,6 +136,11 @@ const img_list = [
         id:12,
         name:"Sachin",
         url:"images/sachin.jpg"
+    },
+    {
+        id:13,
+        name:"Sachin",
+        url:"images/sachin.jpg"
     }
 ];
 
